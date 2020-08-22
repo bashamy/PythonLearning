@@ -1,0 +1,10 @@
+dict = {'lsta': [1,2,3,4], 'tpla': (11,12,13)}
+print(dict['lsta'])
+print(dict['tpla'])
+dict['lsta'].append(5)
+tplalst = list(dict['tpla'])
+tplalst.append(14)
+dict['tpla'] = tuple(tplalst)
+print(dict['lsta'])
+print(dict['tpla'])
+print(dict)
